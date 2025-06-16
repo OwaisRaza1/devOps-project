@@ -1,5 +1,5 @@
-🚀 DevOps Project: AWS Infrastructure Automation with Terraform
-📌 Overview
+#🚀 DevOps Project: AWS Infrastructure Automation with Terraform
+#📌 Overview
 This project provides a fully automated and scalable cloud infrastructure setup using Terraform on Amazon Web Services (AWS). It provisions a multi-tier architecture that includes:
 	•	A custom VPC with public/private subnets
 	•	Auto Scaling Groups (ASGs) for deploying:
@@ -11,7 +11,7 @@ This project provides a fully automated and scalable cloud infrastructure setup 
 	•	Dockerized deployments of both apps via EC2 user data scripts and Nginx reverse proxy
 This setup is built for high availability, scalability, and follows AWS best practices, including autoscaling, SSL encryption via ACM, and modular Terraform files.
 
-✅ Prerequisites
+#✅ Prerequisites
 Before you begin, ensure the following are in place:
 	•	AWS Account: With permissions to provision VPC, EC2, RDS, ALB, ACM, and Route53 resources
 	•	AWS CLI: Installed and configured on your machine
@@ -20,7 +20,7 @@ Before you begin, ensure the following are in place:
 	•	EC2 Key Pair: A valid .pem file for SSH access, referenced in terraform.tfvars
 
 
-🧱 Project Structure
+#🧱 Project Structure
 Each Terraform file is modular and handles a specific part of the infrastructure:
 File
 Purpose

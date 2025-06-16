@@ -12,12 +12,12 @@ This project provides a fully automated and scalable cloud infrastructure setup 
 This setup is built for high availability, scalability, and follows AWS best practices, including autoscaling, SSL encryption via ACM, and modular Terraform files.
 
 ## ✅ Prerequisites
-Before you begin, ensure the following are in place:
-	•	AWS Account: With permissions to provision VPC, EC2, RDS, ALB, ACM, and Route53 resources
-	•	AWS CLI: Installed and configured on your machine
-	•	Terraform (v1.0 or later): Download it from HashiCorp
-	•	Registered Domain Name: Managed via Route53 with a hosted zone set up
-	•	EC2 Key Pair: A valid .pem file for SSH access, referenced in terraform.tfvars
+Before you begin, ensure the following are in place:  
+	-	AWS Account: With permissions to provision VPC, EC2, RDS, ALB, ACM, and Route53 resources
+	-	AWS CLI: Installed and configured on your machine
+	-	Terraform (v1.0 or later): Download it from HashiCorp
+	-	Registered Domain Name: Managed via Route53 with a hosted zone set up
+	-	EC2 Key Pair: A valid .pem file for SSH access, referenced in terraform.tfvars
 
 
 ## 🧱 Project Structure

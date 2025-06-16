@@ -1,5 +1,5 @@
 # 🚀 DevOps Project: AWS Infrastructure Automation with Terraform
-# 📌 Overview
+## 📌 Overview
 This project provides a fully automated and scalable cloud infrastructure setup using Terraform on Amazon Web Services (AWS). It provisions a multi-tier architecture that includes:
 	•	A custom VPC with public/private subnets
 	•	Auto Scaling Groups (ASGs) for deploying:
@@ -11,7 +11,7 @@ This project provides a fully automated and scalable cloud infrastructure setup 
 	•	Dockerized deployments of both apps via EC2 user data scripts and Nginx reverse proxy
 This setup is built for high availability, scalability, and follows AWS best practices, including autoscaling, SSL encryption via ACM, and modular Terraform files.
 
-# ✅ Prerequisites
+## ✅ Prerequisites
 Before you begin, ensure the following are in place:
 	•	AWS Account: With permissions to provision VPC, EC2, RDS, ALB, ACM, and Route53 resources
 	•	AWS CLI: Installed and configured on your machine
@@ -20,7 +20,7 @@ Before you begin, ensure the following are in place:
 	•	EC2 Key Pair: A valid .pem file for SSH access, referenced in terraform.tfvars
 
 
-# 🧱 Project Structure
+## 🧱 Project Structure
 Each Terraform file is modular and handles a specific part of the infrastructure:
 File
 Purpose
@@ -51,7 +51,7 @@ EC2 bootstrap script to deploy the React app
 userbi_data.sh
 EC2 bootstrap script to deploy Metabase BI tool
 
-# ⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 Step 1: Configure terraform.tfvars
 Customize this file with your environment details. Example:
 aws_region                 = "us-west-2"
@@ -61,7 +61,7 @@ instance_type              = "t3.micro"
 key_pair_name              = "my-ec2-keypair"
 domain_name                = "example.com"
 
-# Autoscaling configs
+## Autoscaling configs
 min_size_app               = 2
 desired_capacity_app       = 2
 max_size_app               = 3
@@ -70,7 +70,7 @@ min_size_bi                = 1
 desired_capacity_bi        = 1
 max_size_bi                = 1
 
-# RDS configs
+## RDS configs
 db_username                = "admin"
 db_password                = "YourStrongDBPassword!"
 mysql_db_name              = "myreactdb"
@@ -90,12 +90,12 @@ terraform apply
 Respond with yes when prompted.
 
 Step 5: Access Applications
-After deployment, Terraform will output DNS URLs: \n
-	•	🌐 React App: https://app-owais.example.com \n
-	•	📊 BI Tool (Metabase): https://bi-owais.example.com
+After deployment, Terraform will output DNS URLs:  
+	•	🌐 React App: https://app-owais.example.com  
+	•	📊 BI Tool (Metabase): https://bi-owais.example.com  
 ⚠️ DNS propagation and ACM validation may take a few minutes after apply.
 
-🧹 Cleanup
+## 🧹 Cleanup
 To destroy all provisioned AWS resources and avoid unnecessary costs:
 terraform destroy
 Respond with yes when prompted.

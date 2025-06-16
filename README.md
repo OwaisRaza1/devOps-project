@@ -90,8 +90,8 @@ terraform apply
 Respond with yes when prompted.
 
 Step 5: Access Applications
-After deployment, Terraform will output DNS URLs:
-	•	🌐 React App: https://app-owais.example.com
+After deployment, Terraform will output DNS URLs: \n
+	•	🌐 React App: https://app-owais.example.com \n
 	•	📊 BI Tool (Metabase): https://bi-owais.example.com
 ⚠️ DNS propagation and ACM validation may take a few minutes after apply.
 

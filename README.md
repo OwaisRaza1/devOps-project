@@ -1,14 +1,14 @@
 # 🚀 DevOps Project: AWS Infrastructure Automation with Terraform
 ## 📌 Overview
 This project provides a fully automated and scalable cloud infrastructure setup using Terraform on Amazon Web Services (AWS). It provisions a multi-tier architecture that includes:
-	•	A custom VPC with public/private subnets
-	•	Auto Scaling Groups (ASGs) for deploying:
-	•	A React web application
-	•	A Business Intelligence (BI) tool using Metabase
-	•	Amazon RDS instances for MySQL and PostgreSQL
-	•	An Application Load Balancer (ALB) with SSL termination
-	•	Route 53 DNS configuration for custom domains
-	•	Dockerized deployments of both apps via EC2 user data scripts and Nginx reverse proxy
+	- 	A custom VPC with public/private subnets  
+	- 	Auto Scaling Groups (ASGs) for deploying  
+	-	A React web application  
+	-	A Business Intelligence (BI) tool using Metabase  
+	-	Amazon RDS instances for MySQL and PostgreSQL  
+	-	An Application Load Balancer (ALB) with SSL termination  
+	-	Route 53 DNS configuration for custom domains  
+	-	Dockerized deployments of both apps via EC2 user data scripts and Nginx reverse proxy  
 This setup is built for high availability, scalability, and follows AWS best practices, including autoscaling, SSL encryption via ACM, and modular Terraform files.
 
 ## ✅ Prerequisites
